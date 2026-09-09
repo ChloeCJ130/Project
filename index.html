@@ -1,149 +1,242 @@
 <html lang="en">
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:site_name" content="Marci Metzger Homes">
-    <meta property="og:title" content="Marci Metzger Homes">
-    <meta property="og:description" content="MARCI METZGER - THE RIDGE REALTY GROUP">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/mtn%20falls%20pond.jpg">
-    <meta property="og:locale" content="en_US">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <title>Marci Metzger Homes</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marci Metzger Homes - Revamp Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav>
-        <div class="logo">
-            <h1>Marci Metzger Homes</h1>
-        </div>
-        <ul class="nav_menu">
-            <li class="nav_links"><a href="index.html">Home</a></li>
-            <li class="nav_links"><a href="listing.html">Listings</a></li>
-            <li class="nav_links"><a href="contact.html">Contact</a></li>
-            <li class="nav_links"><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-    <section class="hero">
-        <img class="slide" src="images/image5.webp" alt="">
-        <img class="slide" src="images/image2.webp" alt="">
-        <img class="slide" src="images/image3.webp" alt="">
-        <img class="slide" src="images/image4.webp" alt="">
 
+<body>
+<nav>
+    <div class="logo"><h1>Marci Metzger Homes</h1></div>
+    <button class="nav_toggle" id="navToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav_menu" id="navMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#listings">Listings</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <img class="slide" src="images/image2.webp" alt="">
+    <img class="slide" src="images/image3.webp" alt="">
+    <img class="slide" src="images/image4.webp" alt="">
+    <img class="slide" src="images/image5.webp" alt="">
+
+    <div class="hero_content">
         <p>Marci Metzger - The Ridge Realty Group</p>
         <h1>Pahrump Realtor</h1>
-        <a href="tel:(206) 919-6886">Call Now</a>
-    </section>
-    <section class="partners">
-        <img class="band_img" src="images/band2.webp" alt="">
-        <img class="band_img" src="images/band1.webp" alt="">
-        <img class="band_img" src="images/band3.webp" alt="">
-        <img class="band_img" src="images/band4.webp" alt="">
-    </section>
+    </div>
 
-    <section class="listing_search">
-        <div class="search_card">
-            <h3>Search Listings</h3>
-            <form class="search_form">
-                <div class="search_col">
-                    <div class="search_field">
-                        <label for="location">Location</label>
-                        <select id="location" name="location">
-                            <option>Goodsprings</option>
-                            <option>Pahrump</option>
-                            <option>Las Vegas</option>
-                        </select>
-                    </div>
-                    <div class="search_row">
-                        <div class="search_field">
-                            <label for="bedrooms">Bedrooms</label>
-                            <select id="bedrooms" name="bedrooms">
-                                <option>Any Number</option>
-                                <option>1+</option>
-                                <option>2+</option>
-                                <option>3+</option>
-                                <option>4+</option>
-                                <option>5+</option>
-                                <option>6+</option>
-                            </select>
-                        </div>
-                        <div class="search_field">
-                            <label for="baths">Baths</label>
-                            <select id="baths" name="baths">
-                                <option>Any Number</option>
-                                <option>1+</option>
-                                <option>2+</option>
-                                <option>3+</option>
-                                <option>4+</option>
-                                <option>5+</option>
-                                <option>6+</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
- 
-                <div class="search_col">
-                    <div class="search_field">
-                        <label for="type">Type</label>
-                        <select id="type" name="type">
-                            <option>Land</option>
-                            <option>Single Family</option>
-                            <option>Condo</option>
-                            <option>Multi-Family</option>
-                        </select>
-                    </div>
-                    <div class="search_row">
-                        <div class="search_field underline">
-                            <label for="min_price">Min Price</label>
-                            <input type="text" id="min_price" name="min_price">
-                        </div>
-                        <div class="search_field underline">
-                            <label for="max_price">Max Price</label>
-                            <input type="text" id="max_price" name="max_price">
-                        </div>
-                    </div>
-                </div>
- 
-                <div class="search_col">
-                    <div class="search_field">
-                        <label for="sort_by">Sort By</label>
-                        <select id="sort_by" name="sort_by">
-                            <option>Oldest</option>
-                            <option>Newest</option>
-                            <option>Least Expensive to Most</option>
-                            <option>Most Expensive to Least</option>
-                            <option>Bedrooms (Low to High)</option>
-                            <option>Bedrooms (High to Low)</option>
-                            <option>Bathrooms (Low to High)</option>
-                            <option>Bathrooms (High to Low)</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="search_now">Search Now</button>
-                </div>
-            </form>
+    <div class="hero_search">
+        <select id="heroLocation">
+            <option value="">Any Location</option>
+            <option>Goodsprings</option>
+            <option>Pahrump</option>
+            <option>Las Vegas</option>
+        </select>
+        <select id="heroType">
+            <option value="">Any Type</option>
+            <option>Land</option>
+            <option>Single Family</option>
+            <option>Condo</option>
+            <option>Multi-Family</option>
+        </select>
+        <button id="heroSearchBtn">Search Homes</button>
+    </div>
+</section>
+
+<section class="partners">
+    <img src="images/band1.webp" alt="">
+    <img src="images/band2.webp" alt="">
+    <img src="images/band3.webp" alt="">
+    <img src="images/band4.webp" alt="">
+</section>
+
+<section class="market_pulse">
+    <h2 class="section_heading">Pahrump Market Snapshot</h2>
+    <p class="section_sub">Updated monthly so buyers and sellers always know where the local market stands.</p>
+    <div class="pulse_grid">
+        <div class="pulse_card">
+            <div class="num">$389K</div>
+            <div class="label">Median Price</div>
+            <div class="trend up">▲ 4.2% YoY</div>
         </div>
-    </section>
-    <section class="services">
-        <h1>Our Services</h1>
-    </section>
-    <section class="quality">
+        <div class="pulse_card">
+            <div class="num">38</div>
+            <div class="label">Avg. Days on Market</div>
+            <div class="trend down">▼ 6 days</div>
+        </div>
+        <div class="pulse_card">
+            <div class="num">212</div>
+            <div class="label">Active Listings</div>
+            <div class="trend up">▲ 12 new</div>
+        </div>
+        <div class="pulse_card">
+            <div class="num">$178</div>
+            <div class="label">Price / Sq Ft</div>
+            <div class="trend up">▲ 2.1%</div>
+        </div>
+    </div>
+</section>
 
-    </section>
-    <section class="testimonials">
+<section class="listings_section" id="listings">
+    <h2 class="section_heading">Find Your Dream Home</h2>
+    <p class="section_sub">Every filter below actually filters — try changing location, price, or sort order.</p>
 
-    </section>
-    <section class="cta">
+    <div class="recently_viewed" id="recentlyViewed">
+        <h3>Recently Viewed</h3>
+        <div class="rv_row" id="rvRow"></div>
+    </div>
 
-    </section>
-    <footer>
+    <div class="filter_bar">
+        <div class="f_field">
+            <label>Location</label>
+            <select id="fLocation">
+                <option value="">Any</option>
+                <option>Goodsprings</option>
+                <option>Pahrump</option>
+                <option>Las Vegas</option>
+            </select>
+        </div>
+        <div class="f_field">
+            <label>Type</label>
+            <select id="fType">
+                <option value="">Any</option>
+                <option>Land</option>
+                <option>Single Family</option>
+                <option>Condo</option>
+                <option>Multi-Family</option>
+            </select>
+        </div>
+        <div class="f_field">
+            <label>Bedrooms</label>
+            <select id="fBeds">
+                <option value="0">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+            </select>
+        </div>
+        <div class="f_field">
+            <label>Max Price</label>
+            <input type="number" id="fMaxPrice" placeholder="No limit">
+        </div>
+        <div class="f_field">
+            <label>Sort By</label>
+            <select id="fSort">
+                <option value="newest">Newest</option>
+                <option value="price_asc">Price: Low to High</option>
+                <option value="price_desc">Price: High to Low</option>
+                <option value="beds_desc">Bedrooms: High to Low</option>
+            </select>
+        </div>
+        <button id="applyFilters">Search Now</button>
+    </div>
 
-    </footer>
+    <p class="results_meta" id="resultsMeta"></p>
+    <div class="listings_grid" id="listingsGrid"></div>
+    <p class="no_results" id="noResults">No listings match those filters — try widening your search.</p>
+</section>
+
+<div class="modal_overlay" id="modalOverlay">
+    <div class="modal_box">
+        <button class="modal_close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+        <img id="modalImg" src="" alt="">
+        <div class="modal_content">
+            <h2 id="modalTitle"></h2>
+            <p class="loc" id="modalLoc"></p>
+            <p id="modalDesc" style="font-size:14px;color:#555;line-height:1.7;"></p>
+        </div>
+    </div>
+</div>
+
+<section class="map_section">
+    <h2 class="section_heading">Explore the Area</h2>
+    <p class="section_sub">See where current listings sit relative to schools, golf courses, and the highway.</p>
+    <div class="map_wrap">
+        <iframe title="Pahrump NV map" loading="lazy"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-116.0500%2C36.1800%2C-115.9200%2C36.2600&layer=mapnik&marker=36.2083%2C-115.9839">
+        </iframe>
+    </div>
+</section>
+
+<section class="services">
+    <h2 class="section_heading">Our Services</h2>
+    <div class="services_grid">
+        <div class="service_card">
+            <img src="images/serv1.webp" alt="">
+            <h2>Real Estate Done Right</h2>
+            <p>Nervous about your property adventure? Don't be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!</p>
+        </div>
+        <div class="service_card">
+            <img src="images/serv2.webp" alt="">
+            <h2>Commercial &amp; Residential</h2>
+            <p>Large or small, condo or mansion, we can find it and get at the price that's right. We live, work, and play in this community. Happy to help you find where to put your hard-earned dollars.</p>
+        </div>
+        <div class="service_card">
+            <img src="images/serv3.webp" alt="">
+            <h2>Rely on Expertise</h2>
+            <p>If you have questions about affordability, credit, and loan options, trust us to connect you with the right people to get answers in a timely fashion.</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2 class="section_heading">What Clients Say</h2>
+    <div class="testi_grid">
+        <div class="testi_card">
+            <div class="testi_stars">★★★★★</div>
+            <p>"Marci found us a home in Pahrump within three weeks of us starting our search. She knew the market better than anyone we talked to."</p>
+            <div class="testi_source"><span class="name">Dana R.</span> · Verified Google Review</div>
+        </div>
+        <div class="testi_card">
+            <div class="testi_stars">★★★★★</div>
+            <p>"Sold our house 12% over asking. The whole process felt effortless because she handled every detail."</p>
+            <div class="testi_source"><span class="name">Michael T.</span> · Verified Zillow Review</div>
+        </div>
+        <div class="testi_card">
+            <div class="testi_stars">★★★★★</div>
+            <p>"First-time buyer here — she walked us through everything and never made us feel rushed."</p>
+            <div class="testi_source"><span class="name">Priya S.</span> · Verified Google Review</div>
+        </div>
+    </div>
+</section>
+
+<section class="cta" id="contact">
+    <h2 class="section_heading">Call or Text Anytime</h2>
+    <p class="section_sub">Prefer texting over calling? Either way works — we respond fast.</p>
+    <div class="cta_buttons">
+        <a class="cta_call" href="tel:(206) 919-6886"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <a class="cta_text" href="sms:(206) 919-6886"><i class="fa-solid fa-comment-sms"></i> Text Us</a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer_top">
+        <div class="footer_profile">
+            <img src="images/marci.webp" alt="Marci Metzger">
+            <span>Marci Metzger</span>
+        </div>
+        <div class="footer_social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-yelp"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <p>&copy; <span id="year"></span> Marci Metzger Homes. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js" defer></script>
 </body>
 </html>
