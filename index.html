@@ -1,10 +1,149 @@
-<htmt lang="en">
+<html lang="en">
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="Marci Metzger Homes">
+    <meta property="og:title" content="Marci Metzger Homes">
+    <meta property="og:description" content="MARCI METZGER - THE RIDGE REALTY GROUP">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/mtn%20falls%20pond.jpg">
+    <meta property="og:locale" content="en_US">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <title>Marci Metzger Homes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
 </head>
 <body>
-    <header></header>
-    <footer></footer>
+    <nav>
+        <div class="logo">
+            <h1>Marci Metzger Homes</h1>
+        </div>
+        <ul class="nav_menu">
+            <li class="nav_links"><a href="index.html">Home</a></li>
+            <li class="nav_links"><a href="listing.html">Listings</a></li>
+            <li class="nav_links"><a href="contact.html">Contact</a></li>
+            <li class="nav_links"><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <img class="slide" src="images/image5.webp" alt="">
+        <img class="slide" src="images/image2.webp" alt="">
+        <img class="slide" src="images/image3.webp" alt="">
+        <img class="slide" src="images/image4.webp" alt="">
+
+        <p>Marci Metzger - The Ridge Realty Group</p>
+        <h1>Pahrump Realtor</h1>
+        <a href="tel:(206) 919-6886">Call Now</a>
+    </section>
+    <section class="partners">
+        <img class="band_img" src="images/band2.webp" alt="">
+        <img class="band_img" src="images/band1.webp" alt="">
+        <img class="band_img" src="images/band3.webp" alt="">
+        <img class="band_img" src="images/band4.webp" alt="">
+    </section>
+
+    <section class="listing_search">
+        <div class="search_card">
+            <h3>Search Listings</h3>
+            <form class="search_form">
+                <div class="search_col">
+                    <div class="search_field">
+                        <label for="location">Location</label>
+                        <select id="location" name="location">
+                            <option>Goodsprings</option>
+                            <option>Pahrump</option>
+                            <option>Las Vegas</option>
+                        </select>
+                    </div>
+                    <div class="search_row">
+                        <div class="search_field">
+                            <label for="bedrooms">Bedrooms</label>
+                            <select id="bedrooms" name="bedrooms">
+                                <option>Any Number</option>
+                                <option>1+</option>
+                                <option>2+</option>
+                                <option>3+</option>
+                                <option>4+</option>
+                                <option>5+</option>
+                                <option>6+</option>
+                            </select>
+                        </div>
+                        <div class="search_field">
+                            <label for="baths">Baths</label>
+                            <select id="baths" name="baths">
+                                <option>Any Number</option>
+                                <option>1+</option>
+                                <option>2+</option>
+                                <option>3+</option>
+                                <option>4+</option>
+                                <option>5+</option>
+                                <option>6+</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="search_col">
+                    <div class="search_field">
+                        <label for="type">Type</label>
+                        <select id="type" name="type">
+                            <option>Land</option>
+                            <option>Single Family</option>
+                            <option>Condo</option>
+                            <option>Multi-Family</option>
+                        </select>
+                    </div>
+                    <div class="search_row">
+                        <div class="search_field underline">
+                            <label for="min_price">Min Price</label>
+                            <input type="text" id="min_price" name="min_price">
+                        </div>
+                        <div class="search_field underline">
+                            <label for="max_price">Max Price</label>
+                            <input type="text" id="max_price" name="max_price">
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="search_col">
+                    <div class="search_field">
+                        <label for="sort_by">Sort By</label>
+                        <select id="sort_by" name="sort_by">
+                            <option>Oldest</option>
+                            <option>Newest</option>
+                            <option>Least Expensive to Most</option>
+                            <option>Most Expensive to Least</option>
+                            <option>Bedrooms (Low to High)</option>
+                            <option>Bedrooms (High to Low)</option>
+                            <option>Bathrooms (Low to High)</option>
+                            <option>Bathrooms (High to Low)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search_now">Search Now</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="services">
+        <h1>Our Services</h1>
+    </section>
+    <section class="quality">
+
+    </section>
+    <section class="testimonials">
+
+    </section>
+    <section class="cta">
+
+    </section>
+    <footer>
+
+    </footer>
 </body>
-</htmt>
+</html>
